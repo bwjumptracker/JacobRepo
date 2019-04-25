@@ -2,6 +2,8 @@
 <html lang="en">
  <head>
     <meta charset="utf-8">
+    <!-- I copied the viewport element below from the dopetrope template-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>JumpTracker</title>
     <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
@@ -14,55 +16,61 @@
     <div class="container">
         <header>
             <h1>Vertical Jump Tracker</h1>
+            <!-- the whole nav-bar below is currently display: none -->
             <div class="nav-bar">
                 <div class="nav-link">
-                    <p>Guarantee</p> 
+                    <a href="#guarantee" class="guarantee-link"><span>Guarantee</span></a>
                 </div>
                 <div class="nav-link">
-                    <p>Testimonials</p> 
+                    <a href="#testimonials" class="testimonials-link"><span>Testimonials</span></a>
                 </div>
                 <div class="nav-link">
-                    <p>Workouts</p> 
+                    <a href="#workouts" class="workouts-link"><span>Workouts</span></a>
                 </div>
                 <div class="nav-link">
-                    <p>Philosophy</p> 
+                    <a href="#philosophy" class="philosophy-link"><span>Philosophy</span></a>
                 </div>
                 <div class="nav-link">
-                    <p>Team</p> 
+                    <a href="#team" class="team-link"><span>Team</span></a>
                 </div>
             </div>
         </header>
         <section class="banner">
-            <div class="banner-img">Big Banner Img</div>
+            <div class="banner-img">
+                <img src="img/photo-1530129188596-b62ad72a265d.jpeg" alt="img-265d">
+            </div>
             <div class="banner-info">
-                <div class="text-box">
-                    <h2 class="banner-h2">Jump Higher</h2>
-                    <div class="banner-text">With our tracking app and workouts, you are guaranteed results</div>
-                </div>
+                <h2 class="banner-h2">Jump Higher</h2>
+                <div class="banner-text">Guaranteed results with our tracker and workouts</div>
             </div>
         </section>
         <section class="testimonials">
+            <h2 class="test-h2">Testimonials</h2>
             <div class="test test-1">
-                <div class="test-face">Here is testimonial 1 face</div>
-                <h3 class="test-h3">Here is a testimonial 1 name 
-                </h3>
-                <div class="test-text">Here is testimonial 1 testimonial</div>
+                <div class="test-face">
+                    <img src="img/photo-1470468969717-61d5d54fd036.jpeg" alt="img-d036">
+                </div>
+                <h3 class="test-h3">testimonial 1 name</h3>
+                <div class="test-text">Here is testimonial 1 testimonial Here is testimonial 1 testimonial Here is testimonial 1 testimonial</div>
             </div>
             <div class="test test-2">
-                <div class="test-face">Here is a testimonial 2 face</div>
-                <h3 class="test-h3">Here is a testimonial name 
-                </h3>
-                <div class="test-text">Here is testimonial 2 testimonial</div>
+                <div class="test-face">
+                    <img src="img/photo-1468644953730-862446a9e083.jpeg" alt="img-e083">
+                </div>
+                <h3 class="test-h3">testimonial 2 name</h3>
+                <div class="test-text">Here is testimonial 2 testimonial Here is testimonial 2 testimonial Here is testimonial 2 testimonial</div>
             </div>             
             <div class="test test-3">
-                <div class="test-face">Here is a testimonial 3 face</div>
-                <h3 class="test-h3">Here is testimonial 3 name</h3>
-                <div class="test-text">Here is testimonial 3 testimonial</div>
+                <div class="test-face">
+                    <img src="img/photo-1505915909330-c082888680af.jpeg" alt="img-80af">
+                </div>
+                <h3 class="test-h3">testimonial 3 name</h3>
+                <div class="test-text">Here is testimonial 3 testimonial Here is testimonial 3 testimonial Here is testimonial 3 testimonial</div>
             </div>             
         </section>    
         <section class="action-call">
-            <button class="btn-1">Button 1</button>
-            <button class="btn-2">Button 2</button>
+            <button class="btn-1">Get Started</button>
+            <button class="btn-2">Learn More</button>
         </section>
         <section class="workouts">
             <h2 class="workout-h2">Workouts H2</h2>
@@ -78,18 +86,18 @@
                 <div class="workout-text">Workout 2 Text</div>
                 <div class="workout-button">Workout 2 Button</div>
             </div>
-            <div class="schedule">
-                <h2 class="schedule-h2">Schedule H2</h2>        
-                <div class="schedule-example">
-                    <div class="schedule-date">Date 1</div>
-                    <h3 class="schedule-h3">Workout 1 H3</h3>
-                    <div class="schedule-text">Workout 1 Text</div>
-                </div>
-                <div class="schedule-example">
-                    <div class="schedule-date">Date 2</div>
-                    <h3 class="schedule-h3">Workout 2 H3</h3>
-                    <div class="schedule-text">Workout 2 Text</div>
-                </div>
+        </section>
+        <section class="schedule">
+            <h2 class="schedule-h2">Schedule H2</h2>        
+            <div class="schedule-example">
+                <div class="schedule-date">Date 1</div>
+                <h3 class="schedule-h3">Workout 1 H3</h3>
+                <div class="schedule-text">Workout 1 Text</div>
+            </div>
+            <div class="schedule-example">
+                <div class="schedule-date">Date 2</div>
+                <h3 class="schedule-h3">Workout 2 H3</h3>
+                <div class="schedule-text">Workout 2 Text</div>
             </div>
         </section>
         <section class="team">
@@ -101,27 +109,30 @@
             <button class="footer-btn">footer</button>
             <h2 class="footer-h2">Contact Us!</h2>
             <div class="footer-contact-links">
-                <a href="">Link 1</a>
-                <a href="">Link 2</a>
-                <a href="">Link 3</a>
-                <a href="">Link 4</a>
-                <a href="">Link 5</a>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">Linked In</a>
+                <a href="">Slack</a>
             </div>
             <div class="physical-contacts">
                 <div class="physical-contact">
                     <h4 class="contact-type">Address</h4>
-                    <div class="contact-info">[this is our address]</div>
+                    <div class="contact-info">
+                        <p>Address Line 1</p>
+                        <p>Address Line 2</p>
+                        <p>Address Line 3</p>
+                    </div>
                 </div>
                 <div class="physical-contact">
                     <h4 class="contact-type">Email</h4>
-                    <div class="contact-info">[this is our email]</div>
+                    <div class="contact-info">loremEmail@gmail.com</div>
                 </div>
                 <div class="physical-contact">
                     <h4 class="contact-type">Phone</h4>
-                    <div class="contact-info">[this is our phone number]</div>
+                    <div class="contact-info">1800-JUMPING</div>
                 </div>
             </div>
-            
         </footer>
     </div>        
 </body>
