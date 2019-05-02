@@ -1,49 +1,59 @@
-header {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
 
-h1 {
-    font-size: 2rem;
-    margin: 30px 0 5px 0;
-}
+.container {
+    background-color: red;
 
-.nav-bar {
-    display: none;
-}
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 2rem;
+            margin: 30px 0 5px 0;
+        }
+        .nav-bar {
+            display: none;
+        }
+    }
 
-.banner-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+    .banner {
 
-.banner-info {
-    position: absolute;  
-    left: 50%;                        /* horizontal alignment */
-    top: 40%;                         /* vertical alignment */
-    transform: translate(-50%, -50%); /* precise centering copied these last 3 lines from stack overflow*/
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    text-align: center;
-}
+        .banner-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .banner-info {
+            position: absolute;  
+            left: 50%; /* horizontal alignment */
+            top: 40%; /* vertical alignment */
+            transform: translate(-50%, -50%); 
+            /* precise centering copied these last 3 lines from stack overflow*/
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            text-align: center;
 
-.banner-h2 {
-    margin: 20px 0 70px 0;
-    font-size: 1.8rem;
-}
+            .banner-h2 {
+                margin: 20px 0 70px 0;
+                font-size: 1.8rem;
+            }
 
-.banner-text {
-    margin: 40px 0 20px 0;
-    font-size: 1.4rem;
+            .banner-text {
+                margin: 40px 0 20px 0;
+                font-size: 1.4rem;
+            }
+
+        }
+        
+    }
+
 }
 
 .testimonials {
@@ -84,6 +94,7 @@ h1 {
 .test-face img {
     height: 320px;
     margin: 20px 0 20px 0;
+    width: 100%;
 }
 
 .test-h3 {
@@ -228,52 +239,52 @@ h1 {
     display: none;
 }
 
+
+
 .footer {
     background-color: black;
     color: white;
-}
 
-.footer-btn {
-    display: none;
-}
-
-.footer-h2 {
-    font-size: 1.8rem;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 50px 0 20px 0;
-}
-
-.footer-links {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0 40px 0;
-}
-
-.footer-links a {
-    height: 20px;
-    margin: 10px 5px 5px 5px;
+    .footer-btn {
+        display: none;
+    }
+    
+    .footer-h2 {
+        font-size: 1.8rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0 20px 0;
+    }
+    
+    .footer-icons {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0 40px 0;
+    }
 }
 
 .contacts {
     display: flex;
     flex-direction: column;
+    .contact {
+        display: flex;
+        text-align: center;
+        justify-content: flex-start;
+        margin: 20px 0 20px 0;
+        .contact-type {
+            margin: 0 100px 0 10px;
+        }
+        .contact-info {
+            margin: 1px;
+        }
+    }
 }
 
-.contact {
-    display: flex;
-    text-align: center;
-    justify-content: flex-start;
-    margin: 20px 0 20px 0;
-}
 
-.contact-type {
-    margin: 0 100px 0 10px;
-}
 
 .team {
     margin: 20px 0 20px 0;
