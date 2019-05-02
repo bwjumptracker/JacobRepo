@@ -144,49 +144,54 @@ p {
 .container header {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   justify-content: center;
   align-items: center;
 }
 .container header h1 {
   font-size: 2rem;
-  margin: 30px 0 5px 0;
+  margin: 60px 0 50px 0;
 }
 .container header .nav-bar {
   display: none;
 }
-.container .banner .banner-img {
+.container .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin: 0 0 100px 0;
+  object-fit: cover;
+  max-width: 100%;
+}
+.container .banner .banner-img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  max-width: 100%;
 }
 .container .banner .banner-info {
+  margin: 0 0 100px 0;
   position: absolute;
-  left: 50%;
-  /* horizontal alignment */
-  top: 40%;
-  /* vertical alignment */
-  transform: translate(-50%, -50%);
   /* precise centering copied these last 3 lines from stack overflow*/
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
   text-align: center;
+  object-fit: cover;
 }
 .container .banner .banner-info .banner-h2 {
-  margin: 20px 0 70px 0;
-  font-size: 1.8rem;
+  margin: 70px 0 120px 0;
+  font-size: 4rem;
+  line-height: 2;
 }
 .container .banner .banner-info .banner-text {
-  margin: 40px 0 20px 0;
+  margin: 80px 0 100px 0;
   font-size: 1.4rem;
 }
 .container .testimonials {
-  margin: 20px 0 20px 0;
+  margin: 100px 0 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,7 +200,9 @@ p {
 }
 .container .testimonials .test-h2 {
   font-size: 1.8rem;
-  margin: 20px 0 20px 0;
+  margin: 100px 0 20px 0;
+  display: none;
+  /*display = none*/
 }
 .container .testimonials .test {
   display: flex;
@@ -203,32 +210,30 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  object-fit: cover;
 }
 .container .testimonials .test .test-face {
   margin: 20px 0 20px 0;
-  width: 300px;
-  height: 300px;
-  max-width: 100%;
-  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  object-fit: cover;
 }
 .container .testimonials .test .test-face img {
-  height: 320px;
   margin: 20px 0 20px 0;
+  object-fit: cover;
   width: 100%;
 }
 .container .testimonials .test .test-h3 {
   font-size: 1.7rem;
 }
 .container .testimonials .test .test-text {
-  max-width: 60%;
   margin: 20px 0 20px 0;
   text-align: left;
   line-height: 1.7em;
+  width: 80%;
 }
 .container .action-call {
   padding: 10px;
@@ -272,6 +277,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 100%;
 }
 .container .workouts .workouts h2 {
   font-size: 1.8rem;
@@ -283,17 +289,19 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 100%;
 }
-.container .workouts .workout .workout-img {
-  outline: 0;
+.container .workouts .workout .workout-img img {
+  object-fit: cover;
+  max-width: 100%;
 }
 .container .workouts .workout .workout-h3 {
   font-size: 1.7rem;
   margin: 10px 0 10px 0;
 }
 .container .workouts .workout .workout-text {
-  width: 50%;
-  text-align: center;
+  width: 80%;
+  text-align: left;
 }
 .container .workouts .workout .workout-button {
   display: none;
@@ -319,6 +327,7 @@ p {
   height: 40px;
   position: relative;
   background: red;
+  font-size: 0.8rem;
 }
 .container .schedule .schedule-example .schedule-date:before {
   /*the shape below was copied from csstricks.com*/
@@ -350,7 +359,7 @@ p {
 .container .team .team-h2 {
   margin: 20px 0 20px 0;
 }
-.container .team .team-img {
+.container .team .team-img img {
   display: none;
 }
 .container .team .team-text {
