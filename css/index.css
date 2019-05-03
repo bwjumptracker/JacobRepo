@@ -146,19 +146,28 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
 }
 .container header h1 {
   font-size: 2rem;
-  margin: 60px 0 50px 0;
+  margin: 20px 0 5px 0;
+  background-color: #333;
 }
 .container header .nav-bar {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: #333;
 }
 .container .banner {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 0 100px 0;
+  margin: 100px 0 10px 0;
   object-fit: cover;
   max-width: 100%;
 }
@@ -182,16 +191,18 @@ p {
   object-fit: cover;
 }
 .container .banner .banner-info .banner-h2 {
-  margin: 70px 0 120px 0;
+  margin: 40px 0 120px 0;
   font-size: 4rem;
   line-height: 2;
 }
-.container .banner .banner-info .banner-text {
-  margin: 80px 0 100px 0;
+.container .banner .banner-text {
+  margin: 30px 0 30px 0;
+  width: 80%;
   font-size: 1.4rem;
+  text-align: left;
 }
 .container .testimonials {
-  margin: 100px 0 20px 0;
+  margin: 0 0 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,7 +211,7 @@ p {
 }
 .container .testimonials .test-h2 {
   font-size: 1.8rem;
-  margin: 100px 0 20px 0;
+  margin: 40px 0 20px 0;
   display: none;
   /*display = none*/
 }
@@ -213,7 +224,7 @@ p {
   object-fit: cover;
 }
 .container .testimonials .test .test-face {
-  margin: 20px 0 20px 0;
+  margin: 0 0 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,7 +247,7 @@ p {
   width: 80%;
 }
 .container .action-call {
-  padding: 10px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -255,6 +266,7 @@ p {
   outline: 0;
   padding: 10px;
   font-size: 1.6rem;
+  width: 80%;
 }
 .container .action-call .btn-2 {
   margin: 10px;
@@ -269,6 +281,7 @@ p {
   outline: 0;
   padding: 10px;
   font-size: 1.6rem;
+  width: 80%;
 }
 .container .workouts {
   margin: 20px 0 20px 0;
@@ -294,6 +307,7 @@ p {
 .container .workouts .workout .workout-img img {
   object-fit: cover;
   max-width: 100%;
+  max-height: 60%;
 }
 .container .workouts .workout .workout-h3 {
   font-size: 1.7rem;
@@ -323,11 +337,11 @@ p {
   margin: 20px 20px 20px 20px;
 }
 .container .schedule .schedule-example .schedule-date {
-  width: 40px;
+  width: 60px;
   height: 40px;
   position: relative;
   background: red;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 .container .schedule .schedule-example .schedule-date:before {
   /*the shape below was copied from csstricks.com*/
@@ -385,7 +399,10 @@ p {
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 40px 0 40px 0;
+  margin: 20px 0 20px 0;
+}
+.container .footer .footer-icons i {
+  margin: 20px;
 }
 .container .footer .contacts {
   display: flex;
