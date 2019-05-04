@@ -14,21 +14,28 @@
         margin: 0 0 60px 0;
         z-index: 5;
         h1 {
-            font-size: 3rem;
+            font-size: 2.4rem;
             margin: 20px 0 20px 0;
             background-color: black;
+            font-family: 'FantasqueSansMonoRegular'; 
+            font-weight: normal; 
+            font-style: normal; 
         }
         .nav-bar {
             display: flex;
             flex-direction: row;
             overflow: hidden;
             background-color: black;
-            margin: 20px;
+            margin: 10px;
             a {
                 color: white;
-                margin: 5px 10px 5px 10px;
+                margin: 10px;
                 text-decoration: none;
                 border-top: 1px dashed white;
+                font-family: 'GlacialIndifferenceRegular'; 
+                font-weight: 300;
+                font-style: normal; 
+                padding: 5px 0 0 0;
             }
         }     
     }
@@ -63,24 +70,26 @@
                 transform: translate(-50%, -50%);
                 width: 100%;
                 object-fit: cover;
+                box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
             }
         }
-        
     }
     .testimonials {
-        margin-top: 30px;
         margin: 30px 0 20px 0;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
         text-align: center;
         align-items: flex-start;
+        justify-content: space-evenly;
         .test-h2 {
             font-size: 1.8rem;
             color: #242021;
             margin: 40px 0 20px 0;
             display: none; /*display = none*/
+            font-family: 'GlacialIndifferenceRegular'; 
+            font-weight: 700;
+            font-style: normal; 
         }
         .test {
             display: flex;
@@ -95,7 +104,7 @@
             padding: 20px; 
             border: 3px solid black;
             margin: 5px; 
-            max-width: 25%;
+            width: 20%;
             .test-face {
                 margin: 0 0 20px 0;
                 color: #242021;
@@ -106,14 +115,13 @@
                 text-align: center;
                 object-fit: cover;
                 width: 100%;
+                max-height: 50%;
             }   
             .test-face img {
                 margin: 20px 0 0 0;
                 object-fit: cover;
-                width: 100%;
                 border: 5px solid black;
-                max-height: 90%;
-                max-width: 90;
+                max-height: 400px;
             }  
             .test-h3 {
                 font-size: 1.7rem;
@@ -121,6 +129,9 @@
                 color: #242021;
                 border-top: 2px dashed black;
                 border-bottom: 2px dashed black;
+                font-family: 'GlacialIndifferenceRegular'; 
+                font-weight: 700; 
+                font-style: normal; 
             }
             .test-text {
                 margin: 0 0 20px 0;
@@ -131,11 +142,9 @@
                 color: #242021;
                 border-left: 3px dashed black;
                 border-right: 3px dashed black;
-            }
-            @media (max-width: 799px) {
-                .test {
-                    max-width: 70%;
-                }
+                font-family: 'ProzaLibreRegular'; 
+                font-weight: normal; 
+                font-style: normal; 
             }
         }
     }
@@ -160,6 +169,7 @@
             font-size: 1.6rem;
             width: 80%;
             border: 2px solid #252122;
+            max-width: 400px;
         }
         .btn-2 {
             margin: 10px;
@@ -176,6 +186,7 @@
             font-size: 1.6rem;
             width: 80%;
             border: 2px solid #d52349;
+            max-width: 400px;
         }
     }
     .workouts {
@@ -200,7 +211,7 @@
             text-align: center;   
             border: 3px solid black;
             max-height: 100%;
-            max-width: 100%;
+            max-width: 400px;
             .workout-img img {
                 object-fit: cover;
                 max-width: 100%;
@@ -216,6 +227,10 @@
                 border-bottom: 2px dashed black;
                 color: black;
                 padding: 10px 0 10px 0;
+                font-style: bold;
+                font-family: 'FantasqueSansMonoRegular'; 
+                font-weight: normal; 
+                font-style: normal; 
             }
             .workout-text {
                 text-align: left;
@@ -224,6 +239,9 @@
                 color: black;
                 margin: 20px;
                 padding: 10px;
+                font-family: 'ProzaLibreRegular'; 
+                font-weight: normal; 
+                font-style: normal; 
             }
             .workout-button {
                 display: none;
@@ -235,6 +253,9 @@
         text-align: center;
         font-size: 2.4rem;
         color: black;
+        font-family: 'GlacialIndifferenceRegular'; 
+        font-weight: normal; 
+        font-style: normal; 
     }
     .schedule {
         color: black;
@@ -256,6 +277,9 @@
                 position: relative;
                 background: red;
                 font-size: 1.1rem;
+                font-family: 'FantasqueSansMonoRegular'; 
+                font-weight: normal; 
+                font-style: normal; 
             }
             .schedule-date:before { 
                 /*the shape below was copied from csstricks.com*/
@@ -281,6 +305,9 @@
                 .schedule-text {
                     margin: 0 0 0 0;
                     text-align: left;
+                    font-family: 'ProzaLibreRegular'; 
+                    font-weight: normal; 
+                    font-style: normal; 
                 }
             }
         }
@@ -306,7 +333,10 @@
         background-color: black;
         color: white;
         margin-top: 50px;
-        padding-top: 50px;  
+        padding-top: 50px;
+        font-family: 'ProzaLibreRegular'; 
+        font-weight: normal; 
+        font-style: normal;   
         .footer-btn {
             display: none;
         }
@@ -317,6 +347,9 @@
             align-items: center;
             justify-content: center;
             margin: 50px 0 20px 0;
+            font-family: 'GlacialIndifferenceRegular'; 
+            font-weight: normal; 
+            font-style: normal; 
         }
         .footer-icons {
             display: flex;
@@ -347,6 +380,9 @@
                     border-bottom: 2px solid gold;
                     text-align: center;
                     margin-bottom: 15px;
+                    font-family: 'FantasqueSansMonoRegular'; 
+                    font-weight: normal; 
+                    font-style: normal; 
                 }
                 .contact-info {
                     text-align: center;

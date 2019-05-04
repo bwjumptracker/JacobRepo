@@ -159,22 +159,29 @@ p {
   z-index: 5;
 }
 .container header h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin: 20px 0 20px 0;
   background-color: black;
+  font-family: 'FantasqueSansMonoRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 .container header .nav-bar {
   display: flex;
   flex-direction: row;
   overflow: hidden;
   background-color: black;
-  margin: 20px;
+  margin: 10px;
 }
 .container header .nav-bar a {
   color: white;
-  margin: 5px 10px 5px 10px;
+  margin: 10px;
   text-decoration: none;
   border-top: 1px dashed white;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: 300;
+  font-style: normal;
+  padding: 5px 0 0 0;
 }
 .container .banner {
   margin-top: 50px;
@@ -208,16 +215,16 @@ p {
   transform: translate(-50%, -50%);
   width: 100%;
   object-fit: cover;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 .container .testimonials {
-  margin-top: 30px;
   margin: 30px 0 20px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   text-align: center;
   align-items: flex-start;
+  justify-content: space-evenly;
 }
 .container .testimonials .test-h2 {
   font-size: 1.8rem;
@@ -225,6 +232,9 @@ p {
   margin: 40px 0 20px 0;
   display: none;
   /*display = none*/
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: 700;
+  font-style: normal;
 }
 .container .testimonials .test {
   display: flex;
@@ -239,7 +249,7 @@ p {
   padding: 20px;
   border: 3px solid black;
   margin: 5px;
-  max-width: 25%;
+  width: 20%;
 }
 .container .testimonials .test .test-face {
   margin: 0 0 20px 0;
@@ -251,14 +261,13 @@ p {
   text-align: center;
   object-fit: cover;
   width: 100%;
+  max-height: 50%;
 }
 .container .testimonials .test .test-face img {
   margin: 20px 0 0 0;
   object-fit: cover;
-  width: 100%;
   border: 5px solid black;
-  max-height: 90%;
-  max-width: 90;
+  max-height: 400px;
 }
 .container .testimonials .test .test-h3 {
   font-size: 1.7rem;
@@ -266,6 +275,9 @@ p {
   color: #242021;
   border-top: 2px dashed black;
   border-bottom: 2px dashed black;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: 700;
+  font-style: normal;
 }
 .container .testimonials .test .test-text {
   margin: 0 0 20px 0;
@@ -276,11 +288,9 @@ p {
   color: #242021;
   border-left: 3px dashed black;
   border-right: 3px dashed black;
-}
-@media (max-width: 799px) {
-  .container .testimonials .test .test {
-    max-width: 70%;
-  }
+  font-family: 'ProzaLibreRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 .container .action-call {
   padding: 10px;
@@ -304,6 +314,7 @@ p {
   font-size: 1.6rem;
   width: 80%;
   border: 2px solid #252122;
+  max-width: 400px;
 }
 .container .action-call .btn-2 {
   margin: 10px;
@@ -320,6 +331,7 @@ p {
   font-size: 1.6rem;
   width: 80%;
   border: 2px solid #d52349;
+  max-width: 400px;
 }
 .container .workouts {
   margin: 20px 0 20px 0;
@@ -344,7 +356,7 @@ p {
   text-align: center;
   border: 3px solid black;
   max-height: 100%;
-  max-width: 100%;
+  max-width: 400px;
 }
 .container .workouts .workout .workout-img img {
   object-fit: cover;
@@ -361,6 +373,10 @@ p {
   border-bottom: 2px dashed black;
   color: black;
   padding: 10px 0 10px 0;
+  font-style: bold;
+  font-family: 'FantasqueSansMonoRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 .container .workouts .workout .workout-text {
   text-align: left;
@@ -369,6 +385,9 @@ p {
   color: black;
   margin: 20px;
   padding: 10px;
+  font-family: 'ProzaLibreRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 .container .workouts .workout .workout-button {
   display: none;
@@ -378,6 +397,9 @@ p {
   text-align: center;
   font-size: 2.4rem;
   color: black;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 .container .schedule {
   color: black;
@@ -401,6 +423,9 @@ p {
   position: relative;
   background: red;
   font-size: 1.1rem;
+  font-family: 'FantasqueSansMonoRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 .container .schedule .schedule-example .schedule-date:before {
   /*the shape below was copied from csstricks.com*/
@@ -427,6 +452,9 @@ p {
 .container .schedule .schedule-example .schedule-child .schedule-text {
   margin: 0 0 0 0;
   text-align: left;
+  font-family: 'ProzaLibreRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 .container .team {
   display: none;
@@ -450,6 +478,9 @@ p {
   color: white;
   margin-top: 50px;
   padding-top: 50px;
+  font-family: 'ProzaLibreRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 .container .footer .footer-btn {
   display: none;
@@ -461,6 +492,9 @@ p {
   align-items: center;
   justify-content: center;
   margin: 50px 0 20px 0;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 .container .footer .footer-icons {
   display: flex;
@@ -493,6 +527,9 @@ p {
   border-bottom: 2px solid gold;
   text-align: center;
   margin-bottom: 15px;
+  font-family: 'FantasqueSansMonoRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 .container .footer .contacts .contact .contact-info {
   text-align: center;
