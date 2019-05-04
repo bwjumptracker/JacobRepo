@@ -6,10 +6,12 @@
         justify-content: space-around;
         align-items: center;
         position: fixed;
+        overflow: hidden;
         top: 0;
         width: 100%;
         background-color: black;
         padding: 10px 0 10px 0;
+        margin: 0 0 60px 0;
         h1 {
             font-size: 3rem;
             margin: 20px 0 20px 0;
@@ -20,6 +22,7 @@
             flex-direction: row;
             overflow: hidden;
             background-color: black;
+            margin: 20px;
             a {
                 color: white;
                 margin: 5px 10px 5px 10px;
@@ -37,52 +40,43 @@
         margin: 100px 0 10px 0;
         object-fit: cover;
         max-width: 100%;
-        .banner-img img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            object-fit: cover;
-            max-width: 100%;
-            margin-top: 30px;
-            border-top: 5px solid black;
-            border-bottom: 5px solid black;
-        }
-        .banner-info {
-            margin-top: 30px;
-            margin: 30px 0 100px 0;
-            position: absolute;  
-            /* precise centering copied these last 3 lines from stack overflow*/
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            object-fit: cover;
-            .banner-h2 {
-                margin: 40px 0 120px 0;
-                font-size: 4.0rem;
-                line-height: 2;
-                margin-top: 30px;
+        .special-div {
+            position: relative;
+            width: 100%;
+            .banner-img {
+                display: block;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
             }
-        } 
-        .banner-text {
-            margin: 30px 0 30px 0;
-            width: 80%;
-            font-size: 1.4rem;
-            text-align: center;
-            margin-top: 30px;
-        }  
+            .overlay {
+                position: absolute;
+                top: 40px;
+                Width: 100%;
+                font-size: 4rem;
+                line-height: 5rem;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        
     }
     .testimonials {
         margin-top: 30px;
         margin: 30px 0 20px 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         text-align: center;
-        border: 1px dashed red;
+        max-height: 100%;
+        max-width: 100%;
         .test-h2 {
             font-size: 1.8rem;
             color: #242021;
@@ -97,10 +91,12 @@
             align-items: center;
             text-align: center;
             object-fit: cover;
+            flex-wrap: wrap;
             background-color: #ffffff;
             padding: 20px; 
             border: 3px solid black;
             margin: 5px; 
+            width: 100%;
             .test-face {
                 margin: 0 0 20px 0;
                 color: #242021;
@@ -110,12 +106,15 @@
                 align-items: center;
                 text-align: center;
                 object-fit: cover;
+                width: 100%;
             }   
             .test-face img {
-                margin: 20px 0 20px 0;
+                margin: 20px 0 0 0;
                 object-fit: cover;
                 width: 100%;
-                border: 3px solid black;
+                border: 5px solid black;
+                max-height: 60%;
+                max-width: 60%;
             }  
             .test-h3 {
                 font-size: 1.7rem;
@@ -125,12 +124,14 @@
                 border-bottom: 2px dashed black;
             }
             .test-text {
-                margin: 20px 0 20px 0;
+                margin: 0 0 20px 0;
                 padding: 10px;
                 text-align: left;
                 line-height: 1.7em;
                 width: 80%;
                 color: #242021;
+                border-left: 3px dashed black;
+                border-right: 3px dashed black;
             }
         }
     }
@@ -176,15 +177,14 @@
     .workouts {
         margin: 20px 0 20px 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         text-align: center;
         max-width: 100%;
-        border: 1px dashed red;
-        .workouts h2 {
-            font-size: 1.8rem;
-            border: 1px dashed red;
+        .workout-h2 {
+            font-size: 2.4rem;
+            color: black;
         }
         .workout {
             margin: 20px 0 20px 0;
@@ -192,24 +192,33 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            text-align: center;   
+            border: 3px solid black;
+            max-height: 100%;
             max-width: 100%;
-            border: 1px dashed red;
             .workout-img img {
                 object-fit: cover;
                 max-width: 100%;
-                max-height: 60%;
-                border: 1px dashed red;
+                max-height: 100%;
+                max-height: 200px;
+                border: 5px solid black;
+                margin-top: 10px;
             }
             .workout-h3 {
                 font-size: 1.7rem;
                 margin: 10px 0 10px 0;
-                border: 1px dashed red;
+                border-top: 2px dashed black;
+                border-bottom: 2px dashed black;
+                color: black;
+                padding: 10px 0 10px 0;
             }
             .workout-text {
-                width: 80%;
                 text-align: left;
-                border: 1px dashed red;
+                border-left: 3px dashed black;
+                border-right: 3px dashed black;
+                color: black;
+                margin: 20px;
+                padding: 10px;
             }
             .workout-button {
                 display: none;
@@ -219,7 +228,8 @@
     }
     .schedule-h2 {
         text-align: center;
-        border: 1px dashed red;
+        font-size: 2.4rem;
+        color: black;
     }
     .schedule {
         color: black;
@@ -229,14 +239,12 @@
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
-        border: 1px dashed red;
         .schedule-example {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             text-align: center;
             margin: 20px 20px 20px 20px;
-            border: 1px dashed red;
             .schedule-date {
                 width: 60px;
                 height: 40px;
@@ -263,10 +271,11 @@
                 align-items: center;
                 text-align: center;
                 margin: 20px 0 20px 80px;
-                border: 1px dashed red;
+                padding: 15px;
+                border: 4px solid red;
                 .schedule-text {
-                    margin: 10px 0 0 0;
-                    border: 1px dashed red;
+                    margin: 0 0 0 0;
+                    text-align: left;
                 }
             }
         }
@@ -341,10 +350,6 @@
         }
     }    
 }
-
-
-
-
 
 
 
