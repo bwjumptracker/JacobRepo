@@ -141,28 +141,39 @@ p {
   font-size: 1.2rem;
 }
 /* End Meyer reset */
+.container {
+  background-color: #f7f7f7;
+}
 .container header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: black;
+  padding: 10px 0 10px 0;
 }
 .container header h1 {
-  font-size: 2rem;
-  margin: 20px 0 5px 0;
-  background-color: #333;
+  font-size: 3rem;
+  margin: 20px 0 20px 0;
+  background-color: black;
 }
 .container header .nav-bar {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
+}
+.container header .nav-bar a {
+  color: white;
+  margin: 5px 10px 5px 10px;
+  text-decoration: none;
+  border-top: 1px dashed white;
 }
 .container .banner {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,9 +188,13 @@ p {
   align-items: center;
   object-fit: cover;
   max-width: 100%;
+  margin-top: 30px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
 }
 .container .banner .banner-info {
-  margin: 0 0 100px 0;
+  margin-top: 30px;
+  margin: 30px 0 100px 0;
   position: absolute;
   /* precise centering copied these last 3 lines from stack overflow*/
   color: white;
@@ -194,37 +209,48 @@ p {
   margin: 40px 0 120px 0;
   font-size: 4rem;
   line-height: 2;
+  margin-top: 30px;
 }
 .container .banner .banner-text {
   margin: 30px 0 30px 0;
   width: 80%;
   font-size: 1.4rem;
-  text-align: left;
+  text-align: center;
+  margin-top: 30px;
 }
 .container .testimonials {
-  margin: 0 0 20px 0;
+  margin-top: 30px;
+  margin: 30px 0 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  border: 1px dashed red;
 }
 .container .testimonials .test-h2 {
   font-size: 1.8rem;
+  color: #242021;
   margin: 40px 0 20px 0;
   display: none;
   /*display = none*/
 }
 .container .testimonials .test {
   display: flex;
+  color: #242021;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   object-fit: cover;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 3px solid black;
+  margin: 5px;
 }
 .container .testimonials .test .test-face {
   margin: 0 0 20px 0;
+  color: #242021;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,20 +262,27 @@ p {
   margin: 20px 0 20px 0;
   object-fit: cover;
   width: 100%;
+  border: 3px solid black;
 }
 .container .testimonials .test .test-h3 {
   font-size: 1.7rem;
+  padding: 10px;
+  color: #242021;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
 }
 .container .testimonials .test .test-text {
   margin: 20px 0 20px 0;
+  padding: 10px;
   text-align: left;
   line-height: 1.7em;
   width: 80%;
+  color: #242021;
 }
 .container .action-call {
-  padding: 12px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -267,6 +300,7 @@ p {
   padding: 10px;
   font-size: 1.6rem;
   width: 80%;
+  border: 2px solid #252122;
 }
 .container .action-call .btn-2 {
   margin: 10px;
@@ -282,6 +316,7 @@ p {
   padding: 10px;
   font-size: 1.6rem;
   width: 80%;
+  border: 2px solid #d52349;
 }
 .container .workouts {
   margin: 20px 0 20px 0;
@@ -291,9 +326,11 @@ p {
   align-items: center;
   text-align: center;
   max-width: 100%;
+  border: 1px dashed red;
 }
 .container .workouts .workouts h2 {
   font-size: 1.8rem;
+  border: 1px dashed red;
 }
 .container .workouts .workout {
   margin: 20px 0 20px 0;
@@ -303,31 +340,41 @@ p {
   align-items: center;
   text-align: center;
   max-width: 100%;
+  border: 1px dashed red;
 }
 .container .workouts .workout .workout-img img {
   object-fit: cover;
   max-width: 100%;
   max-height: 60%;
+  border: 1px dashed red;
 }
 .container .workouts .workout .workout-h3 {
   font-size: 1.7rem;
   margin: 10px 0 10px 0;
+  border: 1px dashed red;
 }
 .container .workouts .workout .workout-text {
   width: 80%;
   text-align: left;
+  border: 1px dashed red;
 }
 .container .workouts .workout .workout-button {
   display: none;
+  border: 1px dashed red;
 }
 .container .schedule-h2 {
   text-align: center;
+  border: 1px dashed red;
 }
 .container .schedule {
+  color: black;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   text-align: center;
+  border: 1px dashed red;
 }
 .container .schedule .schedule-example {
   display: flex;
@@ -335,6 +382,7 @@ p {
   align-items: center;
   text-align: center;
   margin: 20px 20px 20px 20px;
+  border: 1px dashed red;
 }
 .container .schedule .schedule-example .schedule-date {
   width: 60px;
@@ -362,26 +410,34 @@ p {
   align-items: center;
   text-align: center;
   margin: 20px 0 20px 80px;
+  border: 1px dashed red;
 }
 .container .schedule .schedule-example .schedule-child .schedule-text {
   margin: 10px 0 0 0;
+  border: 1px dashed red;
 }
 .container .team {
   display: none;
   margin: 20px 0 20px 0;
+  border: 1px dashed red;
 }
 .container .team .team-h2 {
   margin: 20px 0 20px 0;
+  border: 1px dashed red;
 }
 .container .team .team-img img {
   display: none;
+  border: 1px dashed red;
 }
 .container .team .team-text {
   display: none;
+  border: 1px dashed red;
 }
 .container .footer {
   background-color: black;
   color: white;
+  margin-top: 50px;
+  padding-top: 50px;
 }
 .container .footer .footer-btn {
   display: none;
@@ -406,17 +462,52 @@ p {
 }
 .container .footer .contacts {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 50px;
 }
 .container .footer .contacts .contact {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 20px 0 20px 0;
 }
 .container .footer .contacts .contact .contact-type {
   margin: 0 100px 0 10px;
+  border-bottom: 2px solid gold;
+  text-align: center;
+  margin-bottom: 15px;
 }
 .container .footer .contacts .contact .contact-info {
-  margin: 1px;
+  text-align: center;
+}
+@media (min-width: 999px) {
+  h1 {
+    font-size: 2.4rem;
+    color: blue;
+  }
+}
+@media (min-width: 999px) {
+  .nav-bar {
+    background-color: black;
+  }
+  a {
+    color: white;
+    font-size: 1.7rem;
+    margin: 50px 15px 30px 15px;
+    text-decoration: none;
+    border-top: 1px dashed white;
+  }
+}
+@media (min-width: 800px) {
+  .btn-1 {
+    width: 30%;
+  }
+  .btn-2 {
+    width: 30%;
+  }
 }

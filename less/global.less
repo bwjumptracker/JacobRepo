@@ -1,28 +1,35 @@
 .container {
+    background-color: #f7f7f7;
     header {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: center;
         position: fixed;
         top: 0;
         width: 100%;
         background-color: black;
-        height: 30px;
+        padding: 10px 0 10px 0;
         h1 {
-            font-size: 2rem;
-            margin: 20px 0 5px 0;
-            background-color: #black;
+            font-size: 3rem;
+            margin: 20px 0 20px 0;
+            background-color: black;
         }
         .nav-bar {
             display: flex;
             flex-direction: row;
             overflow: hidden;
-            background-color: #black;
+            background-color: black;
+            a {
+                color: white;
+                margin: 5px 10px 5px 10px;
+                text-decoration: none;
+                border-top: 1px dashed white;
+            }
         }     
     }
     .banner {
-        margin-top: 30px;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -37,6 +44,8 @@
             object-fit: cover;
             max-width: 100%;
             margin-top: 30px;
+            border-top: 5px solid black;
+            border-bottom: 5px solid black;
         }
         .banner-info {
             margin-top: 30px;
@@ -61,7 +70,7 @@
             margin: 30px 0 30px 0;
             width: 80%;
             font-size: 1.4rem;
-            text-align: left;
+            text-align: center;
             margin-top: 30px;
         }  
     }
@@ -73,20 +82,28 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        border: 1px dashed red;
         .test-h2 {
             font-size: 1.8rem;
+            color: #242021;
             margin: 40px 0 20px 0;
             display: none; /*display = none*/
         }
         .test {
             display: flex;
+            color: #242021;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             object-fit: cover;
+            background-color: #ffffff;
+            padding: 20px; 
+            border: 3px solid black;
+            margin: 5px; 
             .test-face {
                 margin: 0 0 20px 0;
+                color: #242021;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -98,22 +115,29 @@
                 margin: 20px 0 20px 0;
                 object-fit: cover;
                 width: 100%;
+                border: 3px solid black;
             }  
             .test-h3 {
                 font-size: 1.7rem;
+                padding: 10px;
+                color: #242021;
+                border-top: 2px dashed black;
+                border-bottom: 2px dashed black;
             }
             .test-text {
                 margin: 20px 0 20px 0;
+                padding: 10px;
                 text-align: left;
                 line-height: 1.7em;
                 width: 80%;
+                color: #242021;
             }
         }
     }
     .action-call {
-        padding: 12px;
+        padding: 10px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         .btn-1 {
@@ -130,6 +154,7 @@
             padding: 10px;
             font-size: 1.6rem;
             width: 80%;
+            border: 2px solid #252122;
         }
         .btn-2 {
             margin: 10px;
@@ -145,6 +170,7 @@
             padding: 10px;
             font-size: 1.6rem;
             width: 80%;
+            border: 2px solid #d52349;
         }
     }
     .workouts {
@@ -155,8 +181,10 @@
         align-items: center;
         text-align: center;
         max-width: 100%;
+        border: 1px dashed red;
         .workouts h2 {
             font-size: 1.8rem;
+            border: 1px dashed red;
         }
         .workout {
             margin: 20px 0 20px 0;
@@ -166,38 +194,49 @@
             align-items: center;
             text-align: center;
             max-width: 100%;
+            border: 1px dashed red;
             .workout-img img {
                 object-fit: cover;
                 max-width: 100%;
                 max-height: 60%;
+                border: 1px dashed red;
             }
             .workout-h3 {
                 font-size: 1.7rem;
                 margin: 10px 0 10px 0;
+                border: 1px dashed red;
             }
             .workout-text {
                 width: 80%;
                 text-align: left;
+                border: 1px dashed red;
             }
             .workout-button {
                 display: none;
+                border: 1px dashed red;
             }
         }
     }
     .schedule-h2 {
         text-align: center;
+        border: 1px dashed red;
     }
     .schedule {
+        color: black;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
         text-align: center;
+        border: 1px dashed red;
         .schedule-example {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             text-align: center;
             margin: 20px 20px 20px 20px;
+            border: 1px dashed red;
             .schedule-date {
                 width: 60px;
                 height: 40px;
@@ -224,8 +263,10 @@
                 align-items: center;
                 text-align: center;
                 margin: 20px 0 20px 80px;
+                border: 1px dashed red;
                 .schedule-text {
                     margin: 10px 0 0 0;
+                    border: 1px dashed red;
                 }
             }
         }
@@ -233,19 +274,25 @@
     .team {
         display: none;
         margin: 20px 0 20px 0;
+        border: 1px dashed red;
         .team-h2 {
             margin: 20px 0 20px 0;
+            border: 1px dashed red;
         }
         .team-img img {
             display: none;
+            border: 1px dashed red;
         }
         .team-text {
         display: none;
+        border: 1px dashed red;
         }
     }
     .footer {
         background-color: black;
         color: white;
+        margin-top: 50px;
+        padding-top: 50px;  
         .footer-btn {
             display: none;
         }
@@ -269,17 +316,26 @@
         }
         .contacts {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-bottom: 50px;
             .contact {
                 display: flex;
+                flex-direction: column;
+                align-items: center;
                 text-align: center;
-                justify-content: flex-start;
+                justify-content: center;
                 margin: 20px 0 20px 0;
                 .contact-type {
                     margin: 0 100px 0 10px;
+                    border-bottom: 2px solid gold;
+                    text-align: center;
+                    margin-bottom: 15px;
                 }
                 .contact-info {
-                    margin: 1px;
+                    text-align: center;
                 }
             }
         }
