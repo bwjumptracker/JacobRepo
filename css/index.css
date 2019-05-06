@@ -251,6 +251,17 @@ p {
   margin: 5px;
   width: 20%;
 }
+@media (min-width: 600px) {
+  .container .testimonials .test #test-1 {
+    height: 800px !important;
+  }
+  .container .testimonials .test #test-2 {
+    height: 800px !important;
+  }
+  .container .testimonials .test #test-3 {
+    height: 800px!important;
+  }
+}
 .container .testimonials .test .test-face {
   margin: 0 0 20px 0;
   color: #242021;
@@ -476,7 +487,7 @@ p {
 .container .footer {
   background-color: black;
   color: white;
-  margin-top: 50px;
+  margin-top: 30px;
   padding-top: 50px;
   font-family: 'ProzaLibreRegular';
   font-weight: normal;
@@ -486,15 +497,15 @@ p {
   display: none;
 }
 .container .footer .footer-h2 {
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
   font-size: 1.8rem;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 50px 0 20px 0;
-  font-family: 'GlacialIndifferenceRegular';
-  font-weight: normal;
-  font-style: normal;
+  margin: 20px 40px 20px 40px;
 }
 .container .footer .footer-icons {
   display: flex;
@@ -533,6 +544,15 @@ p {
 }
 .container .footer .contacts .contact .contact-info {
   text-align: center;
+  font-family: 'FantasqueSansMonoRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+.container .footer .contacts .contact .contact-info #address-lines {
+  text-align: center;
+  font-family: 'FantasqueSansMonoRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 @media (max-width: 600px) {
   #test-1 {
@@ -543,6 +563,17 @@ p {
   }
   #test-3 {
     width: 80%;
+  }
+}
+@media (min-width: 801px) {
+  #test-1 {
+    height: 850px;
+  }
+  #test-2 {
+    height: 850px;
+  }
+  #test-3 {
+    height: 850px;
   }
 }
 @media (min-width: 999px) {
