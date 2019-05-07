@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>JumpTracker</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/fantasque-sans-mono" type="text/css"/>
     <link rel="stylesheet" href="css/index.css">
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,82 +18,77 @@
     <div class="container">
         <header>
             <h1>Vertical Jump Tracker</h1>
-            <!-- the whole nav-bar below is currently display: none -->
             <div class="nav-bar">
                 <div class="nav-link">
-                    <a href="#guarantee" class="guarantee-link"><span>Who</span></a>
+                    <a href="#who" class="who-link"><span>Who</span></a>
                 </div>
                 <div class="nav-link">
-                    <a href="#testimonials" class="testimonials-link"><span>How</span></a>
+                    <a href="#how" class="how-link"><span>How</span></a>
                 </div>
                 <div class="nav-link">
-                    <a href="#workouts" class="workouts-link"><span>What</span></a>
+                    <a href="#what" class="what-link"><span>What</span></a>
                 </div>
                 <div class="nav-link">
-                    <a href="#philosophy" class="philosophy-link"><span>When</span></a>
+                    <a href="#when" class="when-link"><span>When</span></a>
                 </div>
                 <div class="nav-link">
-                    <a href="#team" class="team-link"><span>Why</span></a>
+                    <a href="#why" class="why-link"><span>Why</span></a>
                 </div>
             </div>
         </header>
         <section class="banner">
-            <div class="banner-img">
-                <img src="img/bball.jpg" alt="img-bball">
+            <div class="special-div">
+                <img class="banner-img" src="img/bball.jpg" alt="img-bball">
+                <h2 class="overlay">Jump Higher With Us!</h2>
             </div>
-            <div class="banner-info">
-                <h2 class="banner-h2">Jump Higher<br>With Us</h2>
-            </div>
-            <div class="banner-text">Our tracker and workouts deliver guaranteed results for athletes like YOU</div>
         </section>
-        <section class="testimonials">
-            <h2 class="test-h2">Who?</h2>
-            <div class="test test-1">
+        <section class="testimonials" id="who">
+            <div class="test" id="test-1">
+                <h3 class="test-h3">Jenna from Corvallis says...</h3>
                 <div class="test-face">
                     <img src="img/1_Zh8nJeXaDZFrny_wdS6Kgw.jpeg" alt="img-8379">
                 </div>
-                <h3 class="test-h3">Jenna from Corvallis says</h3>
-                <div class="test-text">"I'm a full time trainer, but I always struggled with my standing jumps--then I found VJT and added 9 inches in a few months!"</div>
+                <div class="test-text">"I'm a full time trainer, but I always struggled with my standing jumps--then I found VJT and added 9 inches quick"</div>
             </div>
-            <div class="test test-2">
+            <div class="test" id="test-2">
+                <h3 class="test-h3">Jawaan from Oakland says...</h3>
                 <div class="test-face">
-                    <img src="img/photo-1468644953730-862446a9e083 (1).jpeg" alt="img-e083">
+                    <img src="img/photo-1525914813433-886dc018469d.jpeg" alt="img-8469">
                 </div>
-                <h3 class="test-h3">Jawaan from Oakland says</h3>
-                <div class="test-text">"Going into my junior year, I wasn't even starting on my high school team. I followed Vertical Jump Tracker to the T and now I'm choosing between five scholarship offers!"</div>
+                <div class="test-text">"I wasn't even starting as a junior, but I followed Vertical Jump Tracker to the T and now I have five scholarship offers!"</div>
             </div>             
-            <div class="test test-3">
+            <div class="test" id="test-3">
+                <h3 class="test-h3">Sarah Owens from Covington says...</h3>
                 <div class="test-face">
                     <img src="img/photo-1505915909330-c082888680af (1).jpeg" alt="img-80af">
                 </div>
-                <h3 class="test-h3">Sarah Owens</h3>
-                <div class="test-text">I'm a starting forward in the WNBA, so athletic ability is everything to me. When my teammates saw the dramatic improvements I made using Vertical Jump Tracker, they were begging me to tell them how I did it!</div>
+                <div class="test-text">I'm in the WNBA, so athletic ability is everything. My teammates could not believe how much I improved using Vertical Jump Tracker.</div>
             </div>             
         </section>    
-        <section class="action-call">
-            <button class="btn-1">Get Started</button>
-            <button class="btn-2">Learn More</button>
+        <section class="action-call" id="how">
+            <button class="btn-1" id="btn-1-id">Get Started Now!</button>
+            <button class="btn-2" id="btn-2-id">Learn More</button>
         </section>
-        <section class="workouts">
-            <h2 class="workout-h2">How?</h2>
+        <section class="workouts" id="what">
+            <!-- currently display: none h2 class="workout-h2">How?</h2>-->
             <div class="workout">
+                <h3 class="workout-h3">Upper Body Workouts!</h3>
                 <div class="workout-img">
                     <img src="img/photo-1552848031-326ec03fe2ec.jpeg" alt="img-e2ec">
                 </div>
-                <h3 class="workout-h3">Upper Body Workouts!</h3>
                 <div class="workout-text">Most people don't know you build a lot of your power from your chest, arms and core. We show you how.</div>
                 <div class="workout-button">Workout 1 Button</div><!-- currently display: none -->
             </div>
             <div class="workout">
+                <h3 class="workout-h3">Lower Body Workouts!</h3>
                 <div class="workout-img">
                     <img src="img/photo-1536922246289-88c42f957773.jpeg" alt="img-7773">
                 </div>
-                <h3 class="workout-h3">Lower Body Workouts!</h3>
                 <div class="workout-text">We did all the research to find the absolute best ways to get massive results FAST, and now you can learn them too.</div>
                 <div class="workout-button">Workout 2 Button</div><!-- currently display: none -->
             </div>
         </section>
-        <h2 class="schedule-h2">When?</h2>    <!--had to move this out of schedule section-->
+        <h2 class="schedule-h2" id="when">When?</h2>    <!--had to move this out of schedule section-->
         <section class="schedule">    
             <div class="schedule-example">
                 <div class="schedule-date">Day 1</div>
@@ -109,7 +105,7 @@
                 <div class="schedule-child">
                     <h3 class="schedule-h3"></h3>
                     <div class="schedule-text">
-                        <br>Bench Press: 3x10x70%
+                        Bench Press: 3x10x70%
                         <br>Bent-Over Rows: 3x10
                         <br>Standing Military Press: 3x10
                         <br>Medicine Ball Exercises     
@@ -127,7 +123,7 @@
         <footer class="footer">
             <!-- the button here is currently display: none-->
             <button class="footer-btn">footer</button>
-            <h2 class="footer-h2">Find us on the web</h2>
+            <h2 class="footer-h2" id="why">Why do we do what we do? To help people like you reach your dreams. <br> <br>Find us on the web by clicking one of the four icons below</h2>
             <div class="footer-icons">
                 <a href=""><i class="fab fa-twitter fa-2x" style="color:white"></i></a>
                 <a href=""><i class="fab fa-facebook-f fa-2x" style="color:white"></i></a>
@@ -138,9 +134,9 @@
                 <div class="contact">
                     <h4 class="contact-type">Address</h4>
                     <div class="contact-info">
-                        <p>Address Line 1</p>
-                        <p>Address Line 2</p>
-                        <p>Address Line 3</p>
+                        <p id="address-lines">Address Line 1</p>
+                        <p id="address-lines">Address Line 2</p>
+                        <p id="address-lines">Address Line 3</p>
                     </div>
                 </div>
                 <div class="contact">
